@@ -8,6 +8,10 @@
   </div>
 </div>
 <div class="card-columns">
-  <app-hero-card [heroe]="heroe" *ngFor="let heroe of heroes;">
+  <app-hero-card
+    (heroeSelected)="verHeroe($event)"
+    [index]="i"
+    [heroe]="heroe"
+    *ngFor="let heroe of heroes; let i = index">
   </app-hero-card>
 </div>

@@ -20,7 +20,8 @@ export class SearchHeroeComponent implements OnInit {
     });
   }
 
-  verHeroes(idx: number) {
-    this._router.navigate(['/heroe', idx]);
+  verHeroe(idx: number) {
+    // console.log('desde search heroe', idx);
+    // this._router.navigate(['/heroe', idx]);
   }
 }
