@@ -18,7 +18,7 @@ export class HeroeComponent implements OnInit {
   ngOnInit() {
     this._activatedRouter.params.subscribe(params => {
       this.heroe = this._heroes.getHeroe(params['id']);
-      console.log(this.heroe);
+      console.log('vista heroe', params['id']);
     });
   }
 
