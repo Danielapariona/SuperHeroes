@@ -71,8 +71,7 @@ export class HeroesService {
   }
 
   getHeroe(idx: string) {
-    return this.heroes[idx];
-    // return this.heroes.filter(x => x.id === +idx)[0];
+    return this.heroes.filter(x => x.id === +idx)[0];
   }
 
   searchHeroes(termino: string): IHeroe[] {

@@ -19,9 +19,4 @@ export class SearchHeroeComponent implements OnInit {
       this.heroes = this._heroes.searchHeroes(this.termino);
     });
   }
-
-  verHeroe(idx: number) {
-    // console.log('desde search heroe', idx);
-    // this._router.navigate(['/heroe', idx]);
-  }
 }
