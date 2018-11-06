@@ -6,7 +6,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 import { SearchHeroeComponent } from './components/search-heroe/search-heroe.component';
 
 const APP_ROUTES: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'heroes', component: HeroesComponent },
   { path: 'acerca', component: AboutComponent },
   { path: 'heroe/:id', component: HeroeComponent },
